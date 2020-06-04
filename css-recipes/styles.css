@@ -5,7 +5,6 @@
     --theme-color: #4C5EAB;
     --middBgC: whitesmoke;
     --connected-dot-color: gray;
-    --main-section-color:;
 }
 
 * {
@@ -117,6 +116,7 @@ aside {
     float: left;
     background-color: var(--middBgC);
     width: 30%;
+    margin: ;
 }
 
 aside h2 {
@@ -209,8 +209,10 @@ aside .fa-suitcase suit-style {
     z-index: 5;
 }
 
-.column {
-    min-height: 642px;
+.Lcolumn {
+height: 100%;
+padding-bottom: 100000px;
+margin-bottom: -100000px;
 }
 
 .mainCont {
