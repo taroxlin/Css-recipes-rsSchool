@@ -1,252 +1,302 @@
-:root{
-    --header-fontColor:white;
+:root {
+    --header-fontColor: white;
+    --header-font-grayed: rgba(255,255,255,0.8);
     --header-hovFontColor: #b1b1b1;
-    --greenBg: forestgreen;
-    --middBgC:whitesmoke;
+    --theme-color: #4C5EAB;
+    --middBgC: whitesmoke;
+    --connected-dot-color: gray;
+    --main-section-color:;
 }
 
-*{
+* {
     font-size: 10px;
     box-sizing: content-box;
     font-family: 'Open Sans', sans-serif;
 }
-body{
-    margin: 0;
+
+body {
+    margin: 0 calc( 50% - 512px);
     background-color: black;
     position: absolute;
-    min-height: 93vh;
-    width: 900px;
-    left:30%;
+    min-height: calc( 100vh - 75px);
+    width: 1024px;
 }
+
+
 /*Global use Classes*/
-.circled{
-    background-color: var(--greenBg);
+
+.circled {
+    background-color: var(--theme-color);
     border-radius: 50%;
 }
 
-.fa-suitcase{
-    padding: 10px;
-    font-size: 2rem;
+.suit-style {
+    padding: 15px;
+    font-size: 1.6rem;
     margin: 0 10px;
-    color:white;
+    color: white;
 }
+
+
 /*Header Sections*/
-header{
-    position: absolute;
-    background-color: var(--greenBg);
-    height: 150px;
+
+header {
+    background-color: var(--theme-color);
+    height: 250px;
     width: 100%;
 }
-.fa-map-marker-alt{
-margin-right: 14px;
+
+.name-title {
+    position: absolute;
+    left: 8%;
 }
-.nameTitle{
- position: absolute;
- left: 8%;
-}
-.nameTitle img{
+
+.name-title img {
     float: left;
     position: absolute;
-    top: 25%;
-    width: 60px;
-    height: 60px;
+    top: 36%;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
 }
-.nameTitle h3{
+
+.name-title h3, .name-title p{
     position: relative;
-    top: 10px;
-    left: 70px;
-    line-height:  35px;
-font-size: 2.5rem;
-font-family: sans-serif;
-color: var(--header-fontColor);
-}
-.nameTitle p{
-    position: relative;
-    font-size: 2.0rem;
-    top: -25px;
-    left: 70px;
+    left: 180px;
+    line-height: 35px;
+    font-family: sans-serif;
     color: var(--header-fontColor);
 }
-nav{
+.name-title h3 {
+    top: 45px;
+    font-size: 4rem;
+}
+
+
+.name-title p {
+    top: 15px;
+    font-size: 2.2rem;
+}
+
+nav {
     position: absolute;
-    right: 2%;
+    right: 100px;
+    top: 35px ;
 }
-nav a, nav li, nav i{
-    color: var(--header-fontColor);
-    font-size: 1.3rem;
+
+nav li{
+    width: 150px;
+}
+nav a,
+nav li,
+nav i {
+    color: var(--header-font-grayed);
+    font-size: 1.8rem;
     text-decoration: none;
     list-style: none;
-    font-weight: bold;
+    font-weight: lighter;
     line-height: 30px;
+}
 
+.header-icon {
+position: absolute;
+margin-top: 8px;
+margin-left: -35px;
 }
-nav i{
-    margin-right: 10px;
-    
-}
-.cInfo a:hover, .cInfo li:hover{
+
+.cInfo a:hover,
+.cInfo li:hover {
     color: var(--header-hovFontColor);
-    cursor: pointer;
 }
 
 
 /*aside section*/
-aside{
+
+aside {
     position: relative;
-    margin-top: 150px;
     float: left;
     background-color: var(--middBgC);
     width: 30%;
 }
-aside h2{
+
+aside h2 {
     margin: 20px 0 0 10px;
     font-size: 1.6rem;
     line-height: 40px;
 }
-aside p{
+
+aside p {
     font-size: 1.2rem;
     margin-left: 40px;
     margin-right: 20px;
 }
-.doubleCircled{
-    border: 5px solid var(--greenBg);
+
+.doubleCircled {
+    border: 5px solid var(--theme-color);
     background-color: white;
     padding: 5px;
     border-radius: 50%;
     margin-right: 10px;
 }
-.fa-music, .fa-gamepad, .fa-car{
+
+.fa-music,
+.fa-gamepad,
+.fa-car {
     font-size: 20px;
     margin: auto;
 }
 
-.intrest{
+.intrest {
     margin: 10px 0 0 20px;
     display: inline-block;
     width: 20%;
     text-align: center;
 }
-.coursedStyle ul{
+
+.coursedStyle ul {
     margin-left: 20px;
 }
-.coursedStyle li{
+
+.coursedStyle li {
     font-size: 1.2rem;
     list-style: none;
 }
-.referencesGrid strong{
-    color:forestgreen;
+
+.referencesGrid strong {
+    color: var(--theme-color);
 }
-.referencesGrid p{
+
+.referencesGrid p {
     margin-left: 60px;
     margin: 0;
 }
-.referencesGrid li{
+
+.referencesGrid li {
     list-style: none;
     padding-top: 10px;
     margin-left: 30px;
 }
-.dot{
-    border: 5px solid forestgreen;
-    width: 10px;
-    height: 10px;
+
+.dot {
+    border: 4px solid var(--connected-dot-color);
+    width: 3px;
+    height: 3px;
     border-radius: 50%;
-    float:left;
+    float: left;
+    margin-top: 4px;
     margin-right: 5px;
-    margin-left: -30px;
+    margin-left: -20px;
     z-index: 10;
 }
-.referencesGrid p,.referencesGrid strong{
+
+.referencesGrid p,
+.referencesGrid strong {
     font-size: 1.3rem;
 }
-aside .fa-suitcase{
+
+aside .fa-suitcase suit-style {
     margin-left: 15px;
 }
 
-
-.referencesGrid li::before{
+.referencesGrid::before {
     content: '';
     position: absolute;
-    top: 366px;
-    left: 49px;
-    width: 0.2em;
-    height: 53px;
-    background: forestgreen;
-    z-index: 0;
-  }
-.column{
-    padding-bottom: 100000px;
-    margin-bottom: -100000px;
+    width: 1px;
+    height: 60px;
+    margin-left: 55px;
+    margin-top: 92px;
+    background-color: var(--connected-dot-color);
+    z-index: 5;
 }
-.mainCont{
+
+.column {
+    min-height: 642px;
+}
+
+.mainCont {
     overflow: hidden;
 }
 
 
 /*main sections*/
-main{
+
+main {
     float: right;
-    margin-top: 150px;
-    width: Calc(70% - 2px);
-    background-color: var(--middBgC);
-    border-left: 2px dotted gray;
+    width: Calc(70%);
+    background-color: var(--middBgC);   
 }
 
+.main-title{
 
-main h2 {
+}
+
+.main-title h2 {
     font-size: 2.0rem;
-    margin-left: 20px;
 }
-.pagePortfolio{
-    width: 90%;
+
+.pagePortfolio {
+    width: 70%;
     margin: auto;
 }
-.articleBlock{
-    display: inline-block;
 
+.articleBlock {
+    display: inline-block;
     text-align: center;
-    width: 33%;
-    margin: 5% 8%;
+    width: 47%;
+    margin: 3% 1%;
+    padding-bottom: 20px;
     background-color: white;
 }
-.articleBlock:hover{
-    box-shadow: 10px 10px 10px brown,-10px -10px 10px brown, 10px -10px 10px brown, -10px 10px 10px brown;
-    cursor: pointer;
 
+.articleBlock:hover {
+    box-shadow: 5px 5px 5px brown, -5px -5px 5px brown, 5px -5px 5px brown, -5px 5px 5px brown;
+    cursor: pointer;
 }
-.articleBlock img{
+
+.articleBlock img {
     width: 100%;
 }
+
 .articleBlock h3 {
     margin: 5px;
-    font-size: 1.6rem;
+    margin-top: 20px;
+    font-size: 1.7rem;
     line-height: 25px;
 }
-.articleBlock p{
-    margin: 5px;
-    font-size: 1.3rem;
-}
 
+.articleBlock p {
+    margin: 5px;
+    font-size: 1.5rem;
+}
 
 
 /*footer section*/
-footer{
+
+footer {
     position: absolute;
-    top:100%;
+    top: 100%;
     width: 100%;
-    height: 70px;
-    background-color: var(--greenBg);
+    height: 90px;
+    background-color: var(--theme-color);
 }
-footer p{
-    width: 70%;
-    margin-left: 20%;
+
+footer p {
+    width: 50%;
+    margin-left: 8%;
+    margin-top: 30px;
 }
-footer p, footer a{
-    font-size: 1.3rem;
+
+footer p,
+footer a {
+    font-size: 1.6rem;
     text-decoration: none;
-    color: var(--header-fontColor);
+    color: var(--header-font-grayed);
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+}
+footer a {
     font-weight: bold;
 }
-footer a:hover{
+footer a:hover {
     color: var(--header-hovFontColor);
 }
