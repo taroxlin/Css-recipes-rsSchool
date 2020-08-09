@@ -226,7 +226,7 @@ main {
     float: right;
     width: Calc(70%);
     background-color: var(--middBgC);
-    height: 90vh;   
+    height: 110vh;
 }
 
 .main-title h2 {
