@@ -1,4 +1,4 @@
-[Online Version](https://taroxlin.github.io/Html-Css-Basics/) 
+[Online Version](https://taroxlin.github.io/Css-recipes-rsSchool/css-recipes/index.html) 
 
 
 ### Technical Requirements:
