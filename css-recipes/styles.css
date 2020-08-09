@@ -122,11 +122,8 @@ margin-left: -35px;
     font-size: 1.6rem;
     line-height: 40px;
 }
-
-aside p {
-    font-size: 1.2rem;
-    margin-left: 40px;
-    margin-right: 20px;
+.profileInfo p {
+ margin: 0 30px 0 70px;
 }
 
 .doubleCircled {
