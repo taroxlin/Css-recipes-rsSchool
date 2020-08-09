@@ -116,7 +116,7 @@ aside {
     float: left;
     background-color: var(--middBgC);
     width: 30%;
-    margin: ;
+    height: 90vh;
 }
 
 aside h2 {
@@ -225,11 +225,8 @@ margin-bottom: -100000px;
 main {
     float: right;
     width: Calc(70%);
-    background-color: var(--middBgC);   
-}
-
-.main-title{
-
+    background-color: var(--middBgC);
+    height: 90vh;   
 }
 
 .main-title h2 {
